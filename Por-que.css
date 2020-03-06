@@ -1,0 +1,163 @@
+*{
+    margin:0px;
+    padding: 0px;
+    /* para que las cajas no se desborden */
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header{
+    background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative
+
+}
+
+.menu{
+    display: flex;
+    /* flex-flow: row nowrap; */
+    height: 75px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+    .logo img{
+        height: 50px;
+        width: 200px;
+        position: relative;
+        top: 5px;
+        left: 100px;
+        margin-right: 350px;
+        
+    }
+
+    .nav a{
+        color: black;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    
+    .nav a:hover{
+        color: rgb(0,0,0,.3);
+    }
+
+    .inicio{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+        .inicio h2{
+            color: rgb(67, 69, 70);
+            font-size: 28px;
+            text-align: center;
+        }
+        .inicio p{
+            margin-top: 10px;
+            color: rgb(67, 69, 70);
+            font-size: 18px;
+            text-align: center;
+        }
+        .inicio hr{
+            width: 75%;
+            border: 2px solid;
+            color: rgb(224, 224, 224);
+            margin: auto auto;
+        }
+    
+
+    .titulo{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+    }   
+        .titulo h2{
+            color: rgb(67, 69, 70);
+            font-size: 28px;
+            text-align: center;
+        }
+        .titulo p{
+            margin-top: 10px;
+            color: rgb(67, 69, 70);
+            font-size: 18px;
+        }
+
+
+        .clientes{
+            width: 100%;
+            margin: auto;
+            padding: 60px;
+
+        }
+        .clientes h2{
+            color: #4bc9f4;
+            text-align: center;
+        }
+      
+        .clientes img{
+            width: 500px;
+            height: 400px;
+            margin-right: 60px;
+            float: left;
+        }
+
+        .clientes-2{
+            width: 100%;
+            margin: auto;
+            padding: 60px;
+    
+        }
+        .clientes-2 h2{
+            color: #4bc9f4;
+            text-align: center;
+        }
+      
+        .clientes-2 img{
+            width: 500px;
+            height: 400px;
+            margin-right: 60px;
+            float: right;
+        }
+
+        .clientes-3{
+            width: 100%;
+            margin: auto;
+            padding: 60px;
+
+        }
+        .clientes-3 h2{
+            color: #4bc9f4;
+            text-align: center;
+            margin-top: 70px;
+        }
+      
+        .clientes-3 img{
+            width: 500px;
+            height: 400px;
+            margin-right: 60px;
+            float: left;
+        }
+
+        footer{
+            margin-top: 50px;
+            color: rgb(130, 116, 133);
+            font-size: 13px;
+        }

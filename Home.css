@@ -1,0 +1,284 @@
+*{
+    margin:0px;
+    padding: 0px;
+    /* para que las cajas no se desborden */
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header{
+    background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative
+
+}
+
+    .menu{
+        display: flex;
+        /* flex-flow: row nowrap; */
+        height: 75px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+        .logo img{
+            height: 50px;
+            width: 200px;
+            position: relative;
+            top: 5px;
+            left: 100px;
+            margin-right: 350px;
+            
+        }
+
+        .nav a{
+            color: black;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-left: 30px;
+        }
+        
+        .nav a:hover{
+            color: rgb(0,0,0,.3);
+        }
+ 
+    .texto-principal{
+        background: url(../AiLugar/imagenes/AiLugar-parking.png);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+
+        margin-top: 10px;
+        height: 500px;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+
+    }
+
+    .texto-principal:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        opacity: 0.7;
+    }
+
+        .texto-principal h1{
+            font-size: 40px;
+            color: #4bc9f4 ;
+            font-weight: 300;
+            margin: 0;
+            padding: 0 10px;
+            position: absolute;
+            top: 150px;
+            right: 100px;
+        }
+
+        .texto-principal p{
+            color: #fff;
+            font-size: 20px;
+            margin: 5px;
+            padding: 10 0px;
+            position: absolute;
+            text-align: center;
+            top: 200px;
+            right: 100px;
+        }
+
+        .texto-principal a{
+                width: 300px;
+                height: 40px;
+
+                position: relative;
+                left: 1000px;
+                top: 350px;
+
+                background: #4bc9f4;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                font-size: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                z-index: 2;
+        }
+
+section{
+    margin-top: 20px;
+    /* flex-grow: column wrap; */
+}
+
+        section img{
+            height: 350px;
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+    .flex{
+        display: flex;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .producto{
+        margin: 0 15%;
+    }
+        .sistema{
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sistema h2{
+            margin-bottom: 10px;
+        }
+
+        
+    .prologo{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+    }   
+        .prologo h2{
+            color: rgb(67, 69, 70);
+            font-size: 28px;
+        }
+        .prologo p{
+            margin-top: 10px;
+            color: rgb(181, 174, 183);
+            font-size: 18px;
+        }
+        .prologo hr{
+            width: 75%;
+            border: 2px solid;
+            color: rgb(224, 224, 224);
+            margin: auto auto;
+        }
+
+
+.slideshow{
+    width: 100%;
+    position: relative;
+}
+
+.slider li,ul{
+    width: 100%;
+}
+
+.slider li img{
+    width: 100%;
+    height: 500px;
+}
+
+
+.caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 15px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+.caption h2{
+    font-size: 50px;
+}
+
+caption p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.pagination{
+    position: absolute;
+    top: 102%;  /*para posicionarlo debajo de la imagen  */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li{
+    font-size: 15px;
+    margin: 2px 5px;
+    color: #858585;
+    cursor: pointer;
+}
+
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.left{
+    left: 10px;
+}
+
+.right{
+    right: 10px;
+}
+
+.container{
+    margin-top: 80px;
+}
+
+.valor-agregado img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.agr{
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer{
+    margin-top: 50px;
+    color: rgb(130, 116, 133);
+    font-size: 13px;
+}
